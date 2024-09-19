@@ -1,0 +1,14 @@
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\bin\Debug\net8.0\OPPExercise.exe
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\bin\Debug\net8.0\OPPExercise.deps.json
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\bin\Debug\net8.0\OPPExercise.runtimeconfig.json
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\bin\Debug\net8.0\OPPExercise.dll
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\bin\Debug\net8.0\OPPExercise.pdb
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\OPPExercise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\OPPExercise.AssemblyInfoInputs.cache
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\OPPExercise.AssemblyInfo.cs
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\OPPExercise.csproj.CoreCompileInputs.cache
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\OPPExercise.dll
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\refint\OPPExercise.dll
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\OPPExercise.pdb
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\OPPExercise.genruntimeconfig.cache
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\ref\OPPExercise.dll

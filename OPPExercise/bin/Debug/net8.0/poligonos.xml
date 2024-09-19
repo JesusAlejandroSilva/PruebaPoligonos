@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPoligono xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Poligono>
+    <ID>757b81a1-9458-4d7f-b154-76718f22b470</ID>
+    <Vertices>
+      <ValueTupleOfDoubleDouble>
+        <Item1>0</Item1>
+        <Item2>0</Item2>
+      </ValueTupleOfDoubleDouble>
+      <ValueTupleOfDoubleDouble>
+        <Item1>4</Item1>
+        <Item2>0</Item2>
+      </ValueTupleOfDoubleDouble>
+      <ValueTupleOfDoubleDouble>
+        <Item1>4</Item1>
+        <Item2>3</Item2>
+      </ValueTupleOfDoubleDouble>
+      <ValueTupleOfDoubleDouble>
+        <Item1>0</Item1>
+        <Item2>3</Item2>
+      </ValueTupleOfDoubleDouble>
+    </Vertices>
+    <area>24</area>
+    <longitud>14</longitud>
+  </Poligono>
+</ArrayOfPoligono>
