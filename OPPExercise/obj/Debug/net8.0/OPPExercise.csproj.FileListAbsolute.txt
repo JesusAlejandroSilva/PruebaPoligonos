@@ -12,3 +12,4 @@ C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\refint
 C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\OPPExercise.pdb
 C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\OPPExercise.genruntimeconfig.cache
 C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\ref\OPPExercise.dll
+C:\Users\ext.jsilva\source\repos\OPPExercise\OPPExercise\obj\Debug\net8.0\OPPExercise.sourcelink.json

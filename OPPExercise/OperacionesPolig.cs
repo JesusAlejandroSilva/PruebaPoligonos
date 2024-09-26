@@ -5,8 +5,12 @@ namespace OPPExercise
     public class OperacionesPolig
     {
         #region Atributos
-        private List<Poligono> poligonos;
         
+        
+        private List<Poligono> poligonos;
+
+        // Diccionario de poligonos
+        private Dictionary<Guid, Poligono> PoligonosDT = new Dictionary<Guid, Poligono>();
         #endregion
 
         #region Constructor
@@ -26,7 +30,15 @@ namespace OPPExercise
         #region Metodo Para obtener un poligono por ID
         public Poligono ObtenerPoligono(Guid id)
         {
-            return poligonos.FirstOrDefault(p => p.ID == id);
+            if (PoligonosDT.TryGetValue(id, out Poligono poligono))
+            {
+                return poligono;
+            }
+            else
+            {
+                throw new KeyNotFoundException($"No se encontro ningun polígono con el ID: {id}");
+            }
+
         }
         #endregion
 
@@ -99,33 +111,39 @@ namespace OPPExercise
         }
         #endregion
 
-        #region Metodo que comprueba si algun poligono en el conjunto de datos se cruza con otro
+        #region Metodos que comprueban si algun poligono en el conjunto de datos se cruza con otro
         public bool Interseccion()
         {
+            //Recorre todos los poligonos de la lista poligonos
             for (int i = 0; i < poligonos.Count; i++)
             {
-                var A = Delimitador(poligonos[i]);
+                // Calcula la caja delimitadora del poligono i
+                var A = Delimitador(poligonos[i]); 
 
-                for (int j = i + 1; j < poligonos.Count; j++)
+                //Compara la caja delimitadora del poligono i con cajas de todos los poligonos subsiguientes
+                for (int j = i + 1; j < poligonos.Count; j++) 
                 {
+                    //Calcula la caja delimitadora del poligono j
                     var B = Delimitador(poligonos[j]);
 
+                    //Valida si las dos cajas delimitadoras A y B se intersectan si es asi retorna true de lo contrario false
                     if (CInterseccion(A, B))
                         return true;
                 }
             }
             return false;
         }
-
+        // Metodo que calcula la caja delimitadora, siendo el triangulo más pequeño que pueda contener un poligono
         private (double minX, double minY, double maxX, double maxY) Delimitador(Poligono poligono)
         {
-            double minX = poligono.Vertices.Min(v => v.x);
-            double minY = poligono.Vertices.Min(v => v.y);
-            double maxX = poligono.Vertices.Max(v => v.x);
-            double maxY = poligono.Vertices.Max(v => v.y);
-            return (minX, minY, maxX, maxY);
+            double minX = poligono.Vertices.Min(v => v.x);// Encuentra la coordenada X minima entre los vértices del poligono
+            double minY = poligono.Vertices.Min(v => v.y);// Encuentra la coordenada Y minima entre los vértices del poligono
+            double maxX = poligono.Vertices.Max(v => v.x);// Encuentra la coordenada X maxima entre los vértices del poligono
+            double maxY = poligono.Vertices.Max(v => v.y);// Encuentra la coordenada Y maxima entre los vértices del poligono
+            return (minX, minY, maxX, maxY); //Retorna la caja delimitadora en forma de tupla
         }
 
+        //Metodo que toma dos cajas delimitadoras, boxA y boxB, y determina si no se superponen
         private bool CInterseccion((double minX, double minY, double maxX, double maxY) boxA, (double minX, double minY, double maxX, double maxY) boxB)
         {
             return !(boxA.maxX < boxB.minX || boxA.minX > boxB.maxX || boxA.maxY < boxB.minY || boxA.minY > boxB.maxY);
